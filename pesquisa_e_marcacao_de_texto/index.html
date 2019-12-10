@@ -1,0 +1,279 @@
+<app-navbar></app-navbar>
+<app-sidebar></app-sidebar>
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<div>
+  <h1 class="tutorial"><b>Tutorial</b></h1>
+</div>
+
+<br><br>
+
+<input  class="form-control form-control-lg pesquisar animated fadeInLeft" type="text" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pesquisa" type="text" id="pesquisa" value="" ><br>
+<button id="botao" type="button" class="btn btn-primary comecar animated fadeInDown" onclick="myFunction()" ><i class="fa fa-search fa-2x"></i></button>
+
+<div class="principal ">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed = !isCollapsed"
+  [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample">
+  <font class="child">Login </font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample" [ngbCollapse]="!isCollapsed" id="botao1">
+    <div class="card">
+      <div class="card-body" >
+        <br><font class="child">Vamos iniciar com a apresentação da interface da aplicação, que pode ser acessada pelo link disponível aqui,
+        segue uma ilustração da janela que será observada no navegador, figura 1.</font><br><br>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura01.png" class="img-fluid" alt="Responsive image"><br><br>
+        <font class="child">Com a aquisição do MITRA Monitor, é disponibilizada credenciais de acesso, Usuário e Senha, que são utilizados para acessar a aplicação através da janela LOGIN. <br><br>
+        Vamos exemplificar o procedimento de acesso por meio de uma credencial gerencial, vide figura 2.</font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura02.png" class="img-fluid" alt="Responsive image"><br><font class="child">
+        <b>LOGIN:</b> Janela em que o usuário informa seus dados e solicita acesso ao ambiente do MITRA Monitor.<br>
+        <b>Usuário:</b> Campo de identificação do usuário;<br>
+        <b>Senha:</b> Campo de preenchimento da senha do usuário;<br>
+        <b>Acessar:</b> Botão para efetivar a solicitação de login.<br></font>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="principal2 ">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed2 = !isCollapsed2"
+  [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseExample2">
+  <font class="child">Ambiente Mitra Monitor</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample2" [ngbCollapse]="!isCollapsed2" id="botao2">
+    <div class="card">
+      <div class="card-body" >
+        <br><font class="child">No primeiro acesso, o usuário será direcionado a uma janela assim como a exibida na figura 3. <br>
+        Neste ambiente, o usuário poderá interagir com alguns recursos da aplicação.<br><br></font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura03.png" class="img-fluid" alt="Responsive image"><br><br>
+        <font class="child">Os recursos destacados, são atalhos para que o usuário acesse funcionalidades específicas dentro do ambiente. <br>Por meio desses atalhos,
+        o usuário poderá acessar sua carteira, consultar o status de seus processamentos, consultar o histórico de uso de sua conta, fazer logoff, e etc.</font>
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+<div class="principal3 ">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed3 = !isCollapsed3"
+  [attr.aria-expanded]="!isCollapsed2" aria-controls="collapseExample3" >
+  <font class="child">Menu - Instituição e Status do Preprocessamento</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample3" [ngbCollapse]="!isCollapsed3" id="botao3">
+    <div class="card">
+      <div class="card-body" >
+        <br><font class="child">Clique sobre o recurso em destaque.<br><br></font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura04.png" class="img-fluid" alt="Responsive image" ><br>
+        <font class="child">Será apresentado ao usuário, dentro da mesma janela, um menu que anteriormente encontrava-se oculto, vide figura 5.<br></font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura05.png" class="img-fluid" alt="Responsive image" ><br>
+        <font class="child">Através deste menu, o usuário consulta sua carteira e status de processamento de ativos no MITRA Monitor.<br><br>
+        <b>Mitra Monitor DEVS:</b> Nome da Instituição em que a carteira do usuário está cadastrada;<br>
+        <b>Processamento:</b> Contém informações sobre os ativos em processo de cálculo;<br>
+        <b>Em Andamento:</b> Exibe os ativos que estão sendo calculados;<br>
+        <b>Na fila:</b> Exibe os ativos que aguardam para ser calculados;<br>
+        <b>Finalizados:</b> Exibe os ativos com cálculo finalizado;<br>
+        <b>Cancelados:</b> Exibe os ativos que tiveram o cálculo cancelado;<br>
+        <b>Erro:</b> Exibe os ativos que apresentaram erro durante o cálculo.<br><br>
+        Clique novamente sobre o botão que pressionou e o menu será ocultado.<br></font>
+      </div>
+    </div>
+  </div> 
+</div>
+
+<div  class="principal3">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed4 = !isCollapsed4"
+  [attr.aria-expanded]="!isCollapsed4" aria-controls="collapseExample4" >
+  <font class="child">Importador de XML</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample4" [ngbCollapse]="!isCollapsed4" id="botao4">
+    <div class="card">
+      <div class="card-body" >
+          <font class="child"><br>Clique sobre o recurso em destaque.<br><br></font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura06.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Será aberta uma pequena janela dentro do ambiente do MITRA Monitor. Por meio deste recurso, o usuário poderá adicionar produtos em sua carteira, importando arquivos XML para tanto. </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura07.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Clique sobre o botão Escolher arquivos e será aberto uma nova janela em que o usuário poderá escolher os arquivos que serão importados.<br> </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura08.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>O usuário tem a opção de selecionar um ou mais arquivos para importar simultaneamente. </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura09.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Clique no botão Abrir e os arquivos selecionados serão anexados a janela de importação. </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura10.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Clique sobre o botão Enviar e o usuário dará início a importação dos arquivos. O resultado da importação dos arquivos XML, pode ser visto abaixo, na figura 11, em que constam <br>dois produtos em destaque, agregados a instituição MITRA Monitor DEVs. </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura11.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Selecione o primeiro produto. </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura12.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Uma janela com todas as informações do produto selecionado, será exibida. </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura13.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Selecione o segundo produto. </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura14.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Uma janela com todas as informações do produto selecionado, será exibida. </font>
+        <br><img src="http://10.0.1.144:10000/static/core/images/help/figura15.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Esta janela de relatório é ilustrativa, pois os resultados de uma dada consulta, estão ocultos. Estas informações podem ser visualizadas ao clicar em cada um dos campos disponíveis na janela apresentada. </font>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div  class="principal3">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed5 = !isCollapsed5"
+    [attr.aria-expanded]="!isCollapsed5" aria-controls="collapseExample5"  >
+    <font class="child">Relatório</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample5" [ngbCollapse]="!isCollapsed5" id="botao5">
+    <div class="card">
+      <div class="card-body">
+          <font class="child"><br><b>Data Posição:</b> Data em que é desejado obter o relatório de um produto;<br> 
+        <br><b>Rentabilidade:</b> Campo com informação da rentabilidade do produto;<br> 
+        <br><b>Rentabilidade Mensal:</b> Campo com informação da rentabilidade mensal do produto;<br> 
+        <br><b>Dados do Fundo:</b> Informações sobre Patrimônio Líquido na Data Posição;<br> 
+        <br><b>Rentabilidade Acumulada:</b> Campo com informação da rentabilidade acumulada do produto;<br> 
+        <br><b>Risco:</b> Este campo informa o VaR (Value at Risk) do grupo individualmente, segundo o modelo histórico;<br> 
+        <br><b>Liquidez:</b> Facilidade percentual em converter cotas em recursos financeiros;<br> 
+        <br><b>Crédito:</b> Pior nível de Rating dentre as três agências Fitch, S&P e Moodys;<br> 
+        <br><b>Cenário Stress:</b> Este campo define a variação do valor devido a um cenário de estresse;<br> 
+        <br><b>Pior Cenário BM&F:</b> Dentre os cenários gerados, é selecionado o pior;<br> 
+        <br><b>Stress CVM:</b> Avalia a vulnerabilidade da carteira em eventos extremos;<br> 
+        <br><b>Alocação por Fator de Risco:</b> valor alocado relativo em cada fator de risco;<br> 
+        <br><b>Enquadramento:</b> Verificação de regras de enquadramento e desenquadramento de limite cadastrada para determinada tesouraria;<br> 
+        <br><b>Ranking Luz:</b> Ranqueamento de Fundos, baseado em indicadores, agrupados por classes;<br> 
+        <br><b>Estratégia por Segmento:</b> Segmentos baseados na legislação cadastrada para a tesouraria;<br> 
+        <br><b>Estratégia por:</b><br> 
+        <br><b>Segmento:</b> Detalha por segmento de atuação, os ativos pertencentes ao Fundo;<br> 
+        <br><b>Setor da Economia:</b> Detalha por setor da economia, os ativos pertencentes ao Fundo;<br> 
+        <br><b>Dados por Segmento:</b> Detalha o segmento de atuação dos ativos no Fundo;<br> 
+        <br><b>Produto:</b> Detalha os ativos financeiros que compõem o Fundo de investimentos do cliente.<br> </font>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="principal3">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed10 = !isCollapsed10"
+    [attr.aria-expanded]="!isCollapsed10" aria-controls="collapseExample10"  >
+    <font class="child">Menu - Usuário</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample10" [ngbCollapse]="!isCollapsed10" id="botao10">
+    <div class="card">
+      <div class="card-body">
+          <font class="child"><br>Clique sobre o Menu Usuário.<br> <br></font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura16.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>As opções Consumo, Perfil, Histórico e Sair, do menu, serão exibidas.<br></font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura17.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Clique sobre a opção Consumo.<br> </font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura18.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Será exibida a janela, representada pela figura abaixo.<br> </font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura19.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>A janela ilustra de forma superficial as informações que são apresentadas ao usuário. Clicando nos campos Estruturas Diárias, Cálculos por Estruturas<br> e Utilização, haverá o detalhamento desses campos.<br> </font>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div  class="principal3">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed6 = !isCollapsed6"
+    [attr.aria-expanded]="!isCollapsed6" aria-controls="collapseExample6" >
+    <font class="child">Consumo Mensal</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample6" [ngbCollapse]="!isCollapsed6" id="botao6">
+    <div class="card">
+      <div class="card-body">
+          <font class="child"><br><b>Estruturas Diárias:</b> Campo com a contabilização dos cálculos por estrutura relativo ao período de usos do MITRA Monitor;<br> 
+        <br><b>Cálculos por Estruturas:</b> Campo com o percentual de cálculos das estruturas da carteira.<br> 
+        <br><b>Utilização: </b>Campo relativo ao período acumulado de uso da aplicação<br> <br>
+        <br>Clique sobre a opção Perfil.<br></font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura20.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Será aberto uma nova janela, em que estarão detalhadas das informações do usuário com acesso ao MITRA Monitor.<br> 
+        <br>Clicando sobre o botão Dados Cadastrais, haverá o detalhamento das informações sobre o usuário com acesso ao MITRA Monitor.<br></font>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div  class="principal3">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed7 = !isCollapsed7"
+    [attr.aria-expanded]="!isCollapsed7" aria-controls="collapseExample7"  >
+    <font class="child">Perfil do Usuário</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample7" [ngbCollapse]="!isCollapsed7" id="botao7">
+    <div class="card">
+      <div class="card-body">
+        <font class="child"><br><b>Usuário:</b> Credencial de identificação;<br> 
+        <br><b>Nome: </b>Identificação do usuário;<br> 
+        <br><b>E-mail:</b> Endereço virtual de correspondência do usuário;<br> 
+        <br><b>Instituição:</b> Corporação ou cliente responsável pela licença do MITRA Monitor;<br> 
+        <br><b>Descrição:</b> Informações sobre o usuário ou licença.<br>
+        <br>Clique sobre a opção Histórico.<br> <br><br></font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura21.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Será aberto uma nova janela, em que estarão detalhados o Histórico dos processamentos realizados.<br> </font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura22.png" class="img-fluid" alt="Responsive image" > 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div  class="principal3">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed8 = !isCollapsed8"
+    [attr.aria-expanded]="!isCollapsed8" aria-controls="collapseExample8"  >
+    <font class="child">Processamento - Finalizados</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample8" [ngbCollapse]="!isCollapsed8" id="botao8">
+    <div class="card">
+      <div class="card-body">
+          <font class="child"><br><b>Campo de busca:</b> Campo para localizar um produto através do Nome ou da data posição;<br> 
+        <br><b>Nome do Fundo: </b>Identificação do Fundo pesquisado;<br> 
+        <br><b>Data Posição: </b>Data em que a consulta foi realizada;<br> 
+        <br><b>Data Criação:</b> Data em que o cálculo do Fundo foi realizado.<br> 
+        <br>Clique sobre o botão Definições.<br> </font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura23.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Será aberto uma nova janela, em que estarão detalhados as Definições de Cálculo.<br><br> </font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura24.png" class="img-fluid" alt="Responsive image" > 
+        <font class="child"><br>Clique sobre o campo Parâmetro para ocultar ou exibir as Definições de Cálculo.<br><br> </font>
+        <img src="http://10.0.1.144:10000/static/core/images/help/figura25.png" class="img-fluid" alt="Responsive image" > 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div  class="principal3">
+  <p>
+  <button type="button" class="btn btn-outline-primary alinhamento" (click)="isCollapsed9 = !isCollapsed9"
+    [attr.aria-expanded]="!isCollapsed9" aria-controls="collapseExample9"  >
+    <font class="child">Definições de Cálculo</font><i class="fa fa-caret-down fa-pull-right" ></i></button>
+  </p>
+  <div id="collapseExample9" [ngbCollapse]="!isCollapsed9" id="botao9">
+    <div class="card">
+      <div class="card-body">
+          <font class="child"><br><b>Distribuição:</b> Método para avaliar os retornos;<br> 
+        <br><b>Volatilidade:</b> Medida da dispersão dos retornos;<br> 
+        <br><b>Moeda:</b> Moeda para cotação do produto.<br> <br>
+        <br><b>Amostra:</b> Delimita o período de estudo do ativo;<br>
+        <br><b>Período:</b> Delimita o intervalo de estudo na amostra;<br> 
+        <br><b>Intervalo de Confiança (%):</b> Ajuste do intervalo na curva de distribuição.<br> 
+        <br><b>Benchmark: </b>Indexador de referência para medir desempenho do Ativo.<br> </font>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<input type="text" id="controlador" value="" style="border: none;"/>
+<input type="text" id="controlador2" value="" style="border: none;"/>
+<input type="text" id="controlador3" value="" style="border: none;"/>
